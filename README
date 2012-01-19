@@ -1,1 +1,6 @@
-Install splunk
+Module to manage the install of Splunk.
+
+TODO:
+ - Add splunk cli commands
+  * Manage adding users?
+ - Configure SSL, port, etc
