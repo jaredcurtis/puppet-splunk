@@ -6,7 +6,7 @@
 #   2012-01-18
 #
 #   Tested platforms:
-#    - CentOS 5.6
+#    - CentOS 5.6, Splunk 4.3
 #
 # Parameters:
 #
@@ -62,7 +62,7 @@ class splunk (
     ensure           => 'present',
     name             => $splunk::params::user,
     comment          => 'Splunk Server',
-    home             => '/opt/splunk',
+    home             => $splunk::params::installdir,
     password         => '!!',
     password_max_age => '99999',
     password_min_age => '0',
